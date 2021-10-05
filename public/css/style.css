@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+.nav-btn{
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: auto 20px auto 450px;
+}
+.nav-btn a{
+    margin: auto 20px;
+    text-decoration: none;
+    color: white;
+}
+.nav-btn a:hover{
+    color: blue;
+}
+.nav-title{
+    margin: auto 0px auto 200px;
+}
+.foot{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #010a13;
+    color: white;
+    text-align: center;
+    height: 50px;
+    margin-top: auto;
+  }
+.foot p{
+      margin: auto ;
+  }
+
+.navbar-brand{
+  margin: auto 10px;
+  }
+  .fa-snowflake{
+      font-size: 22px;
+      margin: 10px;
+  }
+.head-line{
+    font-family: 'Grechen Fuemen', cursive;
+    font-size: 40px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto ;
+}
+.btn{
+    border-radius: 25px;
+    margin: 20px 10px 0px 10px;
+}
+.sec2{
+    margin: 10px 200px;
+    height: 400px;
+}
+.carousel {
+    position: relative;
+    overflow: hidden;
+    margin: auto 0px;
+}
+.carousel-item{
+    height: 400px;
+    width: 500px;
+    overflow: hidden;
+
+}
+.carousel-inner{
+    width: fit-content;
+    height: fit-content;
+}
+
+.sec1{
+    width: 750px;
+    margin: 200px 120px auto 0px
+}
+
+.container-box{
+    width: 85vmin;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 348px;
+    overflow: hidden;
+    border: 20px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(-100%);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    40%{
+        transform: translateX(-200%);
+    }
+    50%{
+        transform: translateX(-200%);
+    }
+    60%{
+        transform: translateX(-300%);
+    }
+    68%{
+        transform: translateX(-300%);
+    }
+    78%{
+        transform: translateX(-400%);
+    }
+    86%{
+        transform: translateX(-400%);
+    }
+    92%{
+        transform: translateX(-500%);
+    }
+    100%{
+        transform: translateX(-500%);
+    }
+}
+img{
+    width: 100%;
+}
+.me-2{
+    height: 35px;
+    margin: auto 2px;
+}
+.btn {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 5px;
+}
