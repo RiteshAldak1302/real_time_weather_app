@@ -9,23 +9,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
         integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-dark navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-dark  navbar navbar-expand-lg navbar-dark " >
         <div class="container-fluid">
             <div class="nav-title">
-                <i class="far fa-snowflake" style="color:  rgb(7, 7, 255); "></i><a class="navbar-brand"
-                    href="#">Weather</a><i class="far fa-snowflake" style="color:  rgb(7, 7, 255);"></i>
+                <i class="far fa-snowflake" style="color:  #0e6ffc; "></i><a class="navbar-brand"
+                    href="/">Weather</a><i class="far fa-snowflake" style="color:  #0e6ffc;"></i>
             </div>
             <ul class="nav-btn">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/weather">Weather</a></li>
+                <li><a href="/" class="hover-underline-animation">Home</a></li>
+                <li><a href="/about" class="hover-underline-animation">About</a></li>
+                <li><a href="/weather" class="hover-underline-animation">Weather</a></li>
             </ul>
 
             <form class="d-flex">
@@ -34,17 +34,22 @@
             </form>
         </div>
         </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+
+        </div>
 
     </nav>
 
     <div class="container">
-     
+
         <div class="sec1">
             <p style="font-size: 22px;"">Welcome to weather app</p>
-    <h1 class=" head-line">Get The <span style="color: rgb(55, 55, 255);">Weather</span> Update Of Your City </h1>
-                <button type="button" class="btn btn-primary btn-sm">Check Now</button>
+    <h1 class="head-line">Get The <span style="color: #0e6ffc;">Weather</span> Update Of Your City </h1>
+                <button type="button" class="btn btn-primary btn-sm btnsmall "><a  href="/weather" class="a_tag2">Check Now</a></button>
         </div>
-
         <div class="sec2">
             <div class="container-box">
                 <div class="wrapper">
@@ -57,7 +62,7 @@
                 </div>
             </div>
         </div>
-        
+
 
     </div>
     <footer class="foot" style="display: flex; justify-content: center; align-content: center;">

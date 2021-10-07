@@ -1,21 +1,37 @@
 const express = require('express');
 const app = express();
 const path = require('path')
-const port = process.env.port || 3000;
+const hbs = require('hbs');
+const constants = require('../public/js/main');
+// const dotenv = require('dotenv').config();
+
+const port = process.env.port || 3600;
+// require("../public/js/main")
+// require('../.env')
 
 const public_path = path.join(__dirname,'../public') 
+app.set('view engine', 'hbs');
+const views_path = path.join(__dirname,'../templates/views');
+const partials_path = path.join(__dirname,'../templates/partials')
+app.set('views',views_path);
+hbs.registerPartials(partials_path);
+
+
 app.use(express.static(public_path));
+
+
+
 app.get("/",(req,res)=>{
-   res.send('index.html')
+   res.render('index.hbs')
 })
 app.get("/about",(req,res)=>{
-   res.send("welcome ritesh's website  about page")
+   res.render('about.hbs')
 })
 app.get("/weather",(req,res)=>{
-   res.send("welcome ritesh's website weather page")
+   res.render("weather.hbs")
 })
 app.get("*",(req,res)=>{
-   res.send("404 error ,page not found")
+   res.render("404page.hbs")
 })
 
 app.listen(port,()=>{
