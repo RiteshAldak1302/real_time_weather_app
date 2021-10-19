@@ -1,9 +1,9 @@
+const constants = require('../public/js/main');
 const express = require('express');
 const app = express();
 const path = require('path')
 const hbs = require('hbs');
-const constants = require('../public/js/main');
-// const dotenv = require('dotenv').config();
+
 
 const port = process.env.port || 3600;
 // require("../public/js/main")
